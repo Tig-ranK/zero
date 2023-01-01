@@ -8,11 +8,18 @@ export const App = () => {
    return (
       <GlobalContainer>
          <Header />
-         <Navbar />
+         {/* <Navbar />
          <CallToAction />
-         <Cards />
+         <Cards /> */}
       </GlobalContainer>
    );
 };
 
-const GlobalContainer = styled.div``;
+const GlobalContainer = styled.div`
+   display: grid;
+   grid-template-columns: 2.5rem auto 2.5rem;
+
+   > * {
+      grid-column: 2 / -2;
+   }
+`;
