@@ -8,8 +8,8 @@ export const App = () => {
    return (
       <GlobalContainer>
          <Header />
-         {/* <Navbar />
-         <CallToAction />
+         <Navbar />
+         {/* <CallToAction />
          <Cards /> */}
       </GlobalContainer>
    );

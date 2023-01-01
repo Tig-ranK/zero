@@ -24,7 +24,7 @@ export const Header = () => {
             </Button>
             <Button onClick={() => alert("Basket")}>
                <img src={basket} alt="" />
-               <span>{items} ITEMS</span>
+               <Items>{items} ITEMS</Items>
             </Button>
          </RightSector>
       </Container>
@@ -70,12 +70,14 @@ const RightSector = styled.div`
    justify-content: flex-end;
    align-items: center;
    gap: 1rem;
+
    > a {
       text-transform: uppercase;
       color: var(--black);
       font-weight: 700;
       font-size: var(--main-font-size);
       text-decoration: none;
+      white-space: nowrap;
    }
 `;
 
@@ -98,4 +100,8 @@ const Button = styled.button`
    cursor: pointer;
 
    /* TODO somehow inherit styles from this component, need padding to be customizable */
+`;
+
+const Items = styled.span`
+   white-space: nowrap;
 `;
