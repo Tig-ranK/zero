@@ -40,4 +40,10 @@ p {
    --main-font-size: 15px;
    --p-font-size: 14px;
    --btn-font-size: 13px;
+
+   --big-font-size: 55px;
+   --big-line-height: 67px; 
+   
+   --huge-font-size: 120px;
+   --huge-line-height: 146px;
 }

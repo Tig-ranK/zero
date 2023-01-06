@@ -1,16 +1,15 @@
 import styled from "styled-components";
-import { CallToAction } from "./components/CallToAction";
-import { Cards } from "./components/Cards";
+// Components
 import { Header } from "./components/Header";
 import { Navbar } from "./components/Navbar";
+import { Hero } from "./components/Hero";
 
 export const App = () => {
    return (
       <GlobalContainer>
          <Header />
          <Navbar />
-         {/* <CallToAction />
-         <Cards /> */}
+         <Hero />
       </GlobalContainer>
    );
 };
